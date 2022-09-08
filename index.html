@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="">
+    <title></title>
+    <!-- CSS only -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,regular,500,600,700,300italic,italic,500italic,600italic,700italic" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Inter:500" rel="stylesheet" />
+    
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
+    
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- CSS only -->
+    
+    
+</head>
+
+<body>
+    <svg style="display: none;">
+    
+        <symbol id="orderIcon" viewBox="0 0 27 27">
+            <g>
+                <path d="M1 26H26V1M18 17.8367L7.5 7.12245"></path>
+            </g>
+        </symbol>
+    </svg>
+    <div class="page">
+        <main>
+
+            <div class="main">
+                <form class="main-form" hidden>
+                    <button class="close-icon"></button>
+                    <div class="bold50">Заказать проект</div>
+                    <div class="reg18">Оставьте заявку на составление проекта и мы свяжемся с вами для уточнения деталей</div>
+                    <div class="form-container">
+                        <input type="text" class="custom-input" placeholder="Имя">
+                        <input type="tel" class="custom-input" placeholder="Телефон">
+                        <input type="text" class="custom-input" placeholder="Сообщение">
+                        <div class="form-container__doc">
+                            <label class="custom-checkbox">
+                                <input type="checkbox" value="value-1">
+                                <span class="med14 contacts__checkbox">Согласен на обработку персональных данных</span>
+                            </label>
+                        </div>
+                        <button class="bold18" type="submit">
+                            <span>Отправить</span>
+                            <div><svg class="arrow"><use href="#orderIcon"></use></svg></div>
+                        </button>
+                    </div>
+                </form>
+                <div class="main-form__overlay"></div>
+                <div class="main-submit" hidden>
+                    <div class="main-submit__container">
+                        <button class="close-icon"></button>
+                        <div class="bold28">Ваша заявка отправлена</div>
+                        <div class="reg18">Наши менеджеры свяжутся с вами для уточнения деталей</div>
+                    </div>
+                </div>
+                <div class="modal-overlay" hidden></div>
+                <div class="main__first-block">
+                    <header class="header">
+                        <div class="header__wrapper page-wrapper">
+                            
+                          <a href='main' class="header__logo reg20 nav-button">
+                            <span class="header__logo-left">BYER</span>
+                            <span class="header__logo-right">ART</span>
+                          </a>
+                      
+                          <nav class="header__menu med14">
+                            <ul class="header__nav">
+                              <li><a href="aboutUs" class="nav-button">О нас</a></li>
+                              <li><a href="projects" class="nav-button">Проекты</a></li>
+                              <li><a href="stages" class="nav-button">Этапы</a></li>
+                              <li><a href="calc" class="nav-button">Калькулятор</a></li>
+                              <li><a href="contacts" class="nav-button">Контакты</a></li>
+                            </ul>
+                          </nav>
+                
+                          <button class="header__menu-button"></button>
+                        </div>
+                    </header>
+                    <section class="home">
+                        <div class="page-wrapper home__wrapper">
+                            <div class="home__text-wrapper home__text-wrapper--active" id="main">
+                                <h1 class="home__title bold140">BYER-ART</h1>
+                                <div class="home__desc reg18">
+                                    <p>Малоэтажное проектирование и строительство коттеджей любого уровня сложности.</p>
+                                    <p>Создаем эргономичное пространство для семейной жизни, отдыха и работы.</p>
+                                </div>
+                            </div>
+                            <div class="home__text-wrapper home__text-wrapper--about-us" id="aboutUs">
+                                <h1 class="home__title bold140">О нас</h1>
+                                <div class="home__desc reg18">
+                                    <p>Опыт работы в области архитектуры и дизайна с 2009 года.</p>
+                                    <p>Наша команда состоит из квалифицированных кадров в области архитектуры, дизайна, конструктивных и инженерных решений. Специалисты состоят в НОПРИЗ.</p>
+                                </div>
+                            </div>
+                            <div class="home__text-wrapper" id="projects">
+                                <h1 class="home__title bold140">Проекты</h1>
+                                <div class="home__desc reg18">
+                                    <p>Проектирование, строительство и авторский надзор до сдачи готового объекта «под ключ»: создание индивидуального архитектурного проекта, дизайн интерьера и индивидуального ландшафта территории.</p>
+                                </div>
+                            </div>
+                            <div class="home__text-wrapper" id="stages">
+                                <h1 class="home__title bold140">Этапы</h1>
+                                <div class="home__desc reg18">
+                                    <p>Не просто сделаем проект дома, но и поможем построить. У нас классная талантливая команда от архитекторов до строителей, которую мы собирали годами, приблизит ваш заезд в собственный современный дом. Мы будем приезжать на стройку, контролировать выполнение проекта. Поможем найти материалы и поставщиков.</p>
+                                </div>
+                            </div>
+                            <div class="home__text-wrapper" id="calc">
+                                <h1 class="home__title bold140">Рассчет</h1>
+                                <div class="home__desc reg18">
+                                    <p>У вас есть объект? Сейчас это просто участок земли или голые стены. Мы можем вдохнуть в него жизнь. Давайте создавать вместе.</p>
+                                    <p>Наш калькулятор поможет посчитать ориентировачную стоимости проектных работ по предполагаемой общей площади дома.</p>
+                                </div>
+                            </div>
+                            <div class="home__text-wrapper" id="contacts">
+                                <h1 class="home__title bold140">Контакты</h1>
+                                <div class="home__desc reg18">
+                                    <p>Дом по индивидуальному проекту — органично вписывается в текущий ландшафт, имеет безупречную планировку, соответствует вашим текущим и будущим потребностям.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="page-wrapper order">
+                        <button class="order__button">
+                            <a href="#" class="med14 med14--white order__button-order">Заказать проект</a>
+                            <a href="#" class="med14 med14--white order__button-calc">Калькулятор</a>
+                        </button>
+                        <svg class="order__icon arrow"><use href="#orderIcon"></use></svg>
+                    </div>
+                </div>
+            
+                <div class="stroke">
+            
+                </div>
+            
+                <div class="main__second-block">
+                    <div class="gallery right-block" id="main-scroll">
+                        <div class="page-wrapper gallery__wrapper">
+                            <div class="gallery__img-container flip">
+                                <img src="./assets/images/gallery/gallery-1-gray.png" alt="gallery-img">
+                                <img src="./assets/images/gallery/gallery-1.png" alt="gallery-img">
+                            </div>
+                            <div class="gallery__img-container flip gallery__img-container--max">
+                                <img src="./assets/images/gallery/gallery-2-gray.png" alt="gallery-img">
+                                <img src="./assets/images/gallery/gallery-2.png" alt="gallery-img">
+                            </div>
+                            <div class="gallery__img-container flip">
+                                <img src="./assets/images/gallery/gallery-3-gray.png" alt="gallery-img">
+                                <img src="./assets/images/gallery/gallery-3.png" alt="gallery-img">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- about-us -->
+                    <div class="about-us right-block" id="aboutUs-scroll">
+                        <section class="consist page-wrapper">
+                            <h2 class="bold50">Byer состоит в СРО и имеет лицензии</h2>
+                            <div class="stroke-consist"></div>
+                            <ul class="reg18">
+                                <li>СРО проектирование</li>
+                                <li>СРО изыскания</li>
+                                <li>СРО строительство</li>
+                                <li>Лицензия МЧС</li>
+                                <li>Лицензия МК</li>
+                            </ul>
+                        </section>
+            
+                        <div class="about-us__wrapper">
+                            <div class="page-wrapper mySwiper__button-wrapper">
+                                <button class="mySwiper__button"><svg class="arrow about-us__icon"><use href="#orderIcon"></use></svg></button>
+                            </div>
+                            
+                            <div class="about-us__slaider page-wrapper">
+                                <div class="swiper mySwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <a data-fancybox="gallery" href="./assets/images/aboutUs/slide1.jpg" class="mySwiper__imgContainer"><img src="./assets/images/aboutUs/slide1.jpg" alt="slide"></a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a data-fancybox="gallery" href="./assets/images/aboutUs/slide1.jpg" class="mySwiper__imgContainer"><img src="./assets/images/aboutUs/slide1.jpg" alt="slide"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+            
+                        <div class="about-us__accordion">
+                            <button class="about-us__accordion-item about-us__accordion-item--active page-wrapper">
+                                <h2 class="bold50 about-us__acc-title">Авторская архитектура</h2>
+                                <div><svg class="arrow"><use href="#orderIcon"></use></svg></div>
+                            </button>
+                            <div class="about-us__acc-wrapper page-wrapper">
+                                <div class="about-us__acc-desc reg18">Индивидуальный подход к каждому проекту</div>
+                                <div class="acc-stroke"></div>
+                                <a data-fancybox="gallery" href="./assets/images/aboutUs/accordion/acc-1.jpg" class="mySwiper__imgContainer"><img src="./assets/images/aboutUs/accordion/acc-1.jpg" alt="slide"></a>
+                            </div>
+            
+                            <button class="about-us__accordion-item about-us__accordion-item--active page-wrapper">
+                                <h2 class="bold50 about-us__acc-title">Современный стиль</h2>
+                                <div><svg class="arrow"><use href="#orderIcon"></use></svg></div>
+                            </button>
+                            <div class="about-us__acc-wrapper page-wrapper">
+                                <div class="about-us__acc-desc reg18">Индивидуальный подход к каждому проекту</div>
+                                <div class="acc-stroke"></div>
+                                <a data-fancybox="gallery" href="./assets/images/aboutUs/accordion/acc-1.jpg" class="mySwiper__imgContainer"><img src="./assets/images/aboutUs/accordion/acc-1.jpg" alt="slide"></a>
+                            </div>
+            
+                            <button class="about-us__accordion-item about-us__accordion-item--active page-wrapper">
+                                <h2 class="bold50 about-us__acc-title">Долговечность и безопасность</h2>
+                                <div><svg class="arrow"><use href="#orderIcon"></use></svg></div>
+                            </button>
+                            <div class="about-us__acc-wrapper page-wrapper">
+                                <div class="about-us__acc-desc reg18">Индивидуальный подход к каждому проекту</div>
+                                <div class="acc-stroke"></div>
+                                <a data-fancybox="gallery" href="./assets/images/aboutUs/accordion/acc-1.jpg" class="mySwiper__imgContainer"><img src="./assets/images/aboutUs/accordion/acc-1.jpg" alt="slide"></a>
+                            </div>
+            
+                            <button class="about-us__accordion-item about-us__accordion-item--active page-wrapper">
+                                <h2 class="bold50 about-us__acc-title">Энергоэффективность</h2>
+                                <div><svg class="arrow"><use href="#orderIcon"></use></svg></div>
+                            </button>
+                            <div class="about-us__acc-wrapper page-wrapper">
+                                <div class="about-us__acc-desc reg18">Индивидуальный подход к каждому проекту</div>
+                                <div class="acc-stroke"></div>
+                                <a data-fancybox="gallery" href="./assets/images/aboutUs/accordion/acc-1.jpg" class="mySwiper__imgContainer"><img src="./assets/images/aboutUs/accordion/acc-1.jpg" alt="slide"></a>
+                            </div>
+            
+                            <button class="about-us__accordion-item about-us__accordion-item--active page-wrapper">
+                                <h2 class="bold50 about-us__acc-title">Умный дом</h2>
+                                <div><svg class="arrow"><use href="#orderIcon"></use></svg></div>
+                            </button>
+                            <div class="about-us__acc-wrapper page-wrapper">
+                                <div class="about-us__acc-desc reg18">Индивидуальный подход к каждому проекту</div>
+                                <div class="acc-stroke"></div>
+                                <a data-fancybox="gallery" href="./assets/images/aboutUs/accordion/acc-1.jpg" class="mySwiper__imgContainer"><img src="./assets/images/aboutUs/accordion/acc-1.jpg" alt="slide"></a>
+                            </div>
+            
+                            <button class="about-us__accordion-item about-us__accordion-item--active page-wrapper">
+                                <h2 class="bold50 about-us__acc-title">Сопровождение</h2>
+                                <div><svg class="arrow"><use href="#orderIcon"></use></svg></div>
+                            </button>
+                            <div class="about-us__acc-wrapper page-wrapper">
+                                <div class="about-us__acc-desc reg18">Индивидуальный подход к каждому проекту</div>
+                                <div class="acc-stroke"></div>
+                                <a data-fancybox="gallery" href="./assets/images/aboutUs/accordion/acc-1.jpg" class="mySwiper__imgContainer"><img src="./assets/images/aboutUs/accordion/acc-1.jpg" alt="slide"></a>
+                            </div>
+                        </div>
+            
+                    </div>
+                    <!-- projects -->
+                    <div class="projects right-block black-theme" id="projects-scroll">
+                        <div class="projects__title-wrapper page-wrapper">
+                            <h2 class="bold50">Проектирование малоэтажных домов в составе:</h2>
+                        </div>
+            
+                        <div class="projects__swiper-wrapper page-wrapper">
+                            <div class="projects__button-wrapper">
+                                <button class="projects__button"><svg class="arrow about-us__icon"><use href="#orderIcon"></use></svg></button>
+                            </div>
+            
+                            <div class="swiper projects__swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="swiper__slide-wrapper">
+                                        <div class="swiper__title bold22">Архитектурные решения</div>
+                                        <a data-fancybox="projects" href='./assets/images/projects/projects-1.jpg' class="swiper__imgContainer">
+                                            <img src="./assets/images/projects/projects-1.jpg" alt="projects-img">
+                                        </a>
+                                    </div>
+                                </div>
+            
+                                <div class="swiper-slide">
+                                    <div class="swiper__slide-wrapper">
+                                        <div class="swiper__title bold22">Конструктивные решения</div>
+                                        <a data-fancybox="projects" href='./assets/images/projects/projects-2.jpg' class="swiper__imgContainer">
+                                            <img src="./assets/images/projects/projects-2.jpg" alt="projects-img">
+                                        </a>
+                                    </div>
+                                </div>
+            
+                                <div class="swiper-slide">
+                                    <div class="swiper__slide-wrapper">
+                                        <div class="swiper__title bold22">Инженерные решения</div>
+                                        <a data-fancybox="projects" href='./assets/images/projects/projects-3.jpg' class="swiper__imgContainer">
+                                            <img src="./assets/images/projects/projects-3.jpg" alt="projects-img">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- stages -->
+                    <div class="stages right-block black-theme" id="stages-scroll">
+                        <ol class="stages__list page-wrapper">
+                            <li class="stages__list-container">
+                                <div class="stages__list-title bold50">Размещение заявки на сайте</div>
+                                <div class="stages__list-desc reg18">Оставьте заявку на нашем сайте и наши менеджеры свяжутся с вами для уточнения ддеталей</div>
+                            </li>
+                            <li class="stages__list-container">
+                                <div class="stages__list-title bold50">Индивидуальная встреча</div>
+                                <div class="stages__list-desc reg18">Подберем вам подходящий день и время</div>
+                            </li>
+                            <li class="stages__list-container">
+                                <div class="stages__list-title bold50">Сбор исходных данных</div>
+                                <div class="stages__list-desc reg18">Для точной стоимости и сроков посетим участок</div>
+                            </li>
+                            <li class="stages__list-container">
+                                <div class="stages__list-title bold50">Составление технического задания</div>
+                                <div class="stages__list-desc reg18">Составим техническое задания после полного изучения данных</div>
+                            </li>
+                            <li class="stages__list-container">
+                                <div class="stages__list-title bold50">Договор</div>
+                                <div class="stages__list-desc reg18">Заключаем официальный договор на оказание услуг</div>
+                            </li>
+                            <li class="stages__list-container">
+                                <div class="stages__list-title bold50">Оплата</div>
+                                <div class="stages__list-desc reg18">Вы оплачиваете полную стоимость услуг, после чего мы преступаем к проректированию</div>
+                            </li>
+                        </ol>
+                    </div>
+                    <!-- calc -->
+                    <div class="calc right-block" id="calc-scroll">
+                        <div class="calc__wrapper page-wrapper">
+                            <h3 class="calc__title bold50">Калькулятор стоимости проекта</h3>
+                            <form action="post" class="calc__form">
+                                <div class="calc__container">
+                                    <div class="calc__form-item">
+                                        <h4 class="calc__form-title bold22">Ориентировочная площадь дома</h4>
+                                        <div class="range-input calc__range-input">
+                                            <input  class="range-input__input" type="range" min="1" max="1000" value="500" name="square" oninput="this.nextElementSibling.value = this.value">
+                                            <output class="range-input__output">500</output>
+                                        </div>
+                                    </div>
+                
+                                    <div class="calc__form-item">
+                                        <h4 class="calc__form-title bold22">Какие разделы вас интересуют?</h4>
+                                        <label class="calc__checkbox custom-checkbox">
+                                            <input type="checkbox" value="value-1">
+                                            <span class="reg18">Архитектурные решения</span>
+                                        </label>
+                                        <label class="calc__checkbox custom-checkbox">
+                                            <input type="checkbox" value="value-1">
+                                            <span class="reg18">Конструктивные решения</span>
+                                        </label>
+                                        <label class="calc__checkbox custom-checkbox">
+                                            <input type="checkbox" value="value-1">
+                                            <span class="reg18">Инженерные решения</span>
+                                        </label>
+                                        <label class="calc__checkbox custom-checkbox">
+                                            <input type="checkbox" value="value-1">
+                                            <span class="reg18">Технология “умный дом”</span>
+                                        </label>
+                                        <label class="calc__checkbox custom-checkbox">
+                                            <input type="checkbox" value="value-1">
+                                            <span class="reg18">Дизайн интерьера</span>
+                                        </label>
+                                        <label class="calc__checkbox custom-checkbox">
+                                            <input type="checkbox" value="value-1">
+                                            <span class="reg18">Ландшафтный дизайн</span>
+                                        </label>
+                                        <label class="calc__checkbox custom-checkbox">
+                                            <input type="checkbox" value="value-1">
+                                            <span class="reg18">Электроснабжение</span>
+                                        </label>
+                                        <label class="calc__checkbox custom-checkbox">
+                                            <input type="checkbox" value="value-1">
+                                            <span class="reg18">Электроосвещение</span>
+                                        </label>
+                                        <label class="calc__checkbox custom-checkbox">
+                                            <input type="checkbox" value="value-1">
+                                            <span class="reg18">Водоснабжение</span>
+                                        </label>
+                                        <label class="calc__checkbox custom-checkbox">
+                                            <input type="checkbox" value="value-1">
+                                            <span class="reg18">Водоотведение</span>
+                                        </label>
+                                        <label class="calc__checkbox custom-checkbox">
+                                            <input type="checkbox" value="value-1">
+                                            <span class="reg18">Вентиляция</span>
+                                        </label>
+                                        <label class="calc__checkbox custom-checkbox">
+                                            <input type="checkbox" value="value-1">
+                                            <span class="reg18">Слаботочные сети</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <div class="calc__container">
+                                    <div class="calc__form-item">
+                                        <h4 class="calc__form-title bold22">В каком городе/поселке планируется дом?</h4>
+                                        <input  class="custom-input" type="text" name="city" placeholder="Город">
+                                    </div>
+            
+                                    <div class="calc__form-item">
+                                        <h4 class="calc__form-title bold22">Материал конструкций</h4>
+                                        <div class="custom-select" style="width:100%">
+                                            <select>
+                                              <option value="0">Кирпич / Железобетон / Сруб / Клееный брус</option>
+                                              <option value="1">Кирпич</option>
+                                              <option value="2">Железобетон</option>
+                                              <option value="3">Сруб</option>
+                                              <option value="3">Клееный брус</option>
+                                              <option value="3">Иной</option>
+                                            </select>
+                                        </div>
+                                    </div>
+            
+                                    <div class="calc__form-item">
+                                        <h4 class="calc__form-title bold22">Когда вам нужен готовый проект?</h4>
+                                        <input  class="custom-input" type="text" name="whenProject" placeholder="Через месяц">
+                                    </div>
+            
+                                    <div class="calc__form-item">
+                                        <h4 class="calc__form-title bold22">Сколько этажей планируется в доме?</h4>
+                                        <div class="custom-select" style="width:100%">
+                                            <select>
+                                              <option value="0">1</option>
+                                              <option value="1">1</option>
+                                              <option value="2">2</option>
+                                              <option value="3">3 или более</option>
+                                            </select>
+                                        </div>
+                                    </div>
+            
+                                    <div class="calc__form-item">
+                                        <h4 class="calc__form-title bold22">Количество человек?</h4>
+                                        <div class="custom-select" style="width:100%">
+                                            <select>
+                                              <option value="0">1</option>
+                                              <option value="1">1</option>
+                                              <option value="2">2</option>
+                                              <option value="3">3</option>
+                                              <option value="3">4 - 10</option>
+                                              <option value="3">Другое</option>
+                                            </select>
+                                        </div>
+                                    </div>
+            
+                                    <div class="calc__form-item">
+                                        <h4 class="calc__form-title bold22">Ландшафтный стиль</h4>
+                                        <div class="custom-select" style="width:100%">
+                                            <select>
+                                              <option value="0">Выбрать ландшафтный стиль</option>
+                                              <option value="1">Деревенский</option>
+                                              <option value="2">Японский</option>
+                                              <option value="3">Голландский</option>
+                                              <option value="3">Альпийский</option>
+                                              <option value="3">Русская усадьба</option>
+                                              <option value="3">Экостиль</option>
+                                            </select>
+                                        </div>
+                                    </div>
+            
+                                    <div class="calc__form-item">
+                                        <h4 class="calc__form-title bold22">Дополнительные работы</h4>
+                                        <div class="custom-select" style="width:100%">
+                                            <select>
+                                              <option value="0">Выбрать дополнительные работы</option>
+                                              <option value="1">Устройство газона</option>
+                                              <option value="2">Создание пруда</option>
+                                              <option value="3">Дренажные системы</option>
+                                              <option value="3">Автополив</option>
+                                              <option value="3">Садовое освещение</option>
+                                            </select>
+                                        </div>
+                                    </div>
+            
+                                    <div class="calc__form-item">
+                                        <h4 class="calc__form-title bold22">Перечень помещений</h4>
+                                        <input  class="custom-input" type="text" name="roomNames" placeholder="Перечень помещений">
+                                    </div>
+                                </div>
+            
+                                <button class="calc__button bold18">
+                                    <span>Заказать</span>
+                                    <svg class="arrow calc__button-arrow"><use href="#orderIcon"></use></svg>
+                                </button>
+            
+                                <div class="calc__modal-container" hidden>
+                                    <div class="bold50">Заказать проект</div>
+                                    <div class="reg18">Оставьте заявку на составление проекта и мы свяжемся с вами для уточнения деталей</div>
+                                    <div class="form-container">
+                                        <input type="text" class="custom-input" placeholder="Имя">
+                                        <input type="tel" class="custom-input" placeholder="Телефон">
+                                        <input type="text" class="custom-input" placeholder="Сообщение">
+                                        <div class="form-container__doc">
+                                            <label class="custom-checkbox">
+                                                <input type="checkbox" value="value-1">
+                                                <span class="med14 contacts__checkbox">Согласен на обработку персональных данных</span>
+                                            </label>
+                                        </div>
+                                        <button class="bold18" type="submit">
+                                            <span>Отправить</span>
+                                            <div><svg class="arrow"><use href="#orderIcon"></use></svg></div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- contacts -->
+                    <section class="contacts right-block" id="contacts-scroll">
+                        <div class="contacts__block page-wrapper">
+                            <div class="contacts__container">
+                                <div class="contacts__container-item">
+                                    <h3 class="bold24">Телефон</h3>
+                                    <a class="reg18" href="tel:+ 7 (978) 357-98-93">+ 7 (978) 357-98-93</a>
+                                </div>
+                                <div class="contacts__container-item">
+                                    <h3 class="bold24">Адрес</h3>
+                                    <a class="reg18" href="#">г.Москва, ул. Доброслободская, д. 1/3 </a>
+                                </div>
+                                <div class="contacts__container-item">
+                                    <h3 class="bold24">Почта</h3>
+                                    <a class="reg18" href="tel:+ 7 (978) 357-98-93">byer-art@mail.ru</a>
+                                </div>
+                            </div>
+                            <div class="contacts__container">
+                                <h3 class="bold24">Напишите нам</h3>
+                                <form class="form-container">
+                                    <input type="text" class="custom-input" placeholder="Имя">
+                                    <input type="tel" class="custom-input" placeholder="Телефон">
+                                    <input type="text" class="custom-input" placeholder="Сообщение">
+                                    <div class="form-container__doc">
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox" value="value-1">
+                                            <span class="med14 contacts__checkbox">Согласен на обработку персональных данных</span>
+                                        </label>
+                                    </div>
+                                    <button class="bold18">
+                                        <span>Отправить</span>
+                                        <div><svg class="arrow"><use href="#orderIcon"></use></svg></div>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="contacts__images-container">
+                            <div class="contacts__img-container flip">
+                                <img src="./assets/images/contacts/contacts-1-gray.jpg" alt="img">
+                                <img src="./assets/images/contacts/contacts-1.jpg" alt="img">
+                            </div>
+                            <div class="contacts__img-container flip">
+                                <img src="./assets/images/contacts/contacts-2-gray.jpg" alt="img">
+                                <img src="./assets/images/contacts/contacts-2.jpg" alt="img">
+                            </div>
+                            <div class="contacts__img-container flip">
+                                <img src="./assets/images/contacts/contacts-3-gray.jpg" alt="img">
+                                <img src="./assets/images/contacts/contacts-3.jpg" alt="img">
+                            </div>
+                        </div>
+                        <span class="contacts__right reg12 page-wrapper">2021 © Все права защищены</span>
+                    </section>
+                </div>
+            </div>
+
+        </main>
+
+    </div>
+
+    <!-- JS -->
+    <!-- <script src="assets/js/components/swiper.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="assets/js/app.js"></script>
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+</body>
+
+</html>
